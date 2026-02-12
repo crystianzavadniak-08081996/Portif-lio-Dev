@@ -1,0 +1,8 @@
+/* o grid ja deixa os itens em linhas, um em baixo do outro. Ai e so colocar grid na classe o elemento que voce quer organizar.*/
+.grid {
+  display: grid;
+}
+/* o grid-flow-col define que os itens do grid sejam dispostos em colunas, ou seja, lado a lado. Ai e so colocar grid-flow-col na classe o elemento que voce quer organizar. */
+.grid-flow-col {
+  grid-auto-flow: column;
+}

@@ -16,6 +16,18 @@
   --gray-400: #292C34;
   --gray-500: #16181D;
   --gray-600: #0D0E11;
+
+  --font-title: "Asap", sans-serif;
+    --title-lg: 700 56px/120% var(--font-title);
+    --title-md: 700 24px/120% var(--font-title);
+    --title-sm: 700 16px/120% var(--font-title);
+
+  --font-subtitle: "Inconsolata" , monospace;
+    --subtitle: 400 20px/120% var(--font-subtitle);
+  
+  --font-text: "Maven Pro" , sans-serif;
+    --text-md: 400 16px/140% var(--font-text);
+    --text-sm: 400 14px/140% var(--font-text);
 }
 
 body {
