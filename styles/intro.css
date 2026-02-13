@@ -26,12 +26,12 @@
   margin-inline: auto; 
 } 
 
-#caret { 
-  display: block; 
-  margin: 94px auto 0; /* top spacing + centered */ 
-  width: 32px; 
-  height: 32px; 
-} 
+#caret {
+  display: block;
+  margin: 94px auto 0;  /* smaller spacing */
+  width: 24px;          /* smaller icon */
+  height: 24px;
+}
 
 #avatar-wrapper {
   position: relative;
@@ -85,6 +85,7 @@
   height: 40px;
 
   margin-inline: auto;
+  margin-top: 60px;
 }
 
 
@@ -101,7 +102,7 @@
 
   color: var(--gray-200);
   font: var(--text-sm);
-  line-height: 1; /* this is a must to mantein everything in line horizontally */
+  line-height: 1;/* this is a must to mantein everything in line horizontally */
 }
 
 
