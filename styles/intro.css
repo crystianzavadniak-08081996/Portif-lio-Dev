@@ -1,7 +1,113 @@
-#secondary {
-  padding-block: 30px;
+#intro{ 
+  padding: 80px 0; 
+  background-image: url("../assets/images/Background_Intro.png"); 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+} 
+
+#info { 
+  max-width: 1040px; /* your target width */ 
+  margin: 0 auto; /* center horizontally */ 
+  display: grid; /* column layout */ 
+  gap: 48px; /* space between header and tags */ 
+  text-align: center; /* matches Figma "centered" vibe */ 
+} 
+
+#info header { 
+  display: grid; 
+  justify-items: center; /* centers avatar and text block */ 
+  gap: 24px; 
+} 
+
+#header-text p{ 
+  font: var(--text-sm); 
+  max-width: 680px; /* adjust until it becomes 2 lines */ 
+  margin-inline: auto; 
+} 
+
+#caret { 
+  display: block; 
+  margin: 94px auto 0; /* top spacing + centered */ 
+  width: 32px; 
+  height: 32px; 
+} 
+
+#avatar-wrapper {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  margin-inline: auto;
 }
 
-#tertiary {
-  padding-block: 80px;
+/* the photo */ 
+#avatar { 
+  width: 96px; /* adjust to match Figma */ 
+  height: 96px; 
+  border-radius: 50%; 
+  object-fit: cover; /* border ring */ 
+  border: 2px solid var(--red); /* optional: to separate the ring from background */ 
+  padding: 4px; 
+  background: var(--gray-500); 
+} 
+
+#code-icon{
+  position: absolute;
+  right: -12px;   /* negative makes it leak outside */
+  bottom: -8px;  /* negative makes it leak outside */
+  width: 45px;
+  height: 45px;
+  padding: 0;
 }
+
+#intro .name { 
+  color: var(--red); 
+}
+
+#header-text{
+  display: grid;
+  gap: 16px; /* controls spacing between h3, h1, p */
+}
+
+#intro p {
+  font: var(--text-sm);
+  color: var(--gray-300); /* ✅ matches Figma */
+}
+
+/* TAGS (chips) */
+#tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
+  max-width: 754px;
+  height: 40px;
+
+  margin-inline: auto;
+}
+
+
+#tags > div {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  height: 32px;
+  padding: 0 16px;
+
+  border-radius: 999px;
+  background: var(--gray-400);
+
+  color: var(--gray-200);
+  font: var(--text-sm);
+  line-height: 1; /* this is a must to mantein everything in line horizontally */
+}
+
+
+#tags > div img {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
