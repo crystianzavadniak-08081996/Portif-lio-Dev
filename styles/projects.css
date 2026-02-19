@@ -40,20 +40,24 @@
 }
 
 /* each card */
-#projects #imgs > div {
+#projects #imgs > a {
   background: var(--gray-400);
   border-radius: 12px;
   padding: 12px;
+
   display: grid;
   gap: 8px;
 
-  border: 1px solid transparent; /* important */
-  transition: border-color 200ms ease, transform 200ms ease;
+  text-decoration: none; /* remove underline */
+  color: inherit;        /* keep text color */
+
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
-#projects #imgs > div:hover {
-  border-color: var(--gray-300);
+
+#projects #imgs > a:hover {
   transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 #projects #imgs img {
