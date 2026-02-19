@@ -49,6 +49,7 @@
   border: 2px solid var(--red); /* optional: to separate the ring from background */ 
   padding: 4px; 
   background: var(--gray-500); 
+  /* margin-top: 80px; */
 } 
 
 #code-icon{
@@ -67,6 +68,7 @@
 #header-text{
   display: grid;
   gap: 16px; /* controls spacing between h3, h1, p */
+  margin-top: 50px;
 }
 
 #intro p {

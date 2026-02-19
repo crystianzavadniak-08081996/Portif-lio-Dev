@@ -1,0 +1,40 @@
+main{
+  padding-left: 120px;
+  padding-top: 0%;
+  padding-bottom: 144px;
+}
+
+h3 {
+  margin-top: 72px;
+  font: var(--subtitle);      /* Inconsolata 20px */
+  .name{
+    color: var(--red);
+  }
+  justify-self: center;
+}
+
+h2 {
+  margin-top: 8px;
+  margin-bottom: 56px;
+  font: var(--title-md);
+  color:var(--gray-100);
+  justify-self: center;
+}
+
+h4{
+  font: var(--title-sm);
+  color: var(--gray-100);
+}
+
+p{
+  font: var(--text-sm);
+  color: var(--gray-300);
+}
+
+img{
+  height: 100%;
+  object-fit: cover;
+  width: 306px;
+  height: 156px;
+  border-radius: 8px;
+}
