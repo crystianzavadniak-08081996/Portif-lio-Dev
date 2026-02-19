@@ -1,0 +1,92 @@
+#contact {
+  padding: 88px 0 144px;
+  text-align: center;
+  background-image: url("../assets/images/Background_Contacts.png");
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+}
+
+#contact header {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin-bottom: 56px;
+}
+
+#contact header h3 {
+  font: var(--subtitle);
+  color: var(--purple);
+}
+
+#contact header h2 {
+  font: var(--title-md );
+  color: var(--gray-100);
+}
+
+#contact header p {
+  font: var(--text-md);
+  color: var(--gray-300);
+}
+
+#contact #contact-links > div {
+  border: 1px solid var(--gray-400);
+}
+
+/* LINKS LIST (buttons) */
+#contact-links {
+  max-width: 400px;      /* similar to Figma button column width */
+  margin: 0 auto;        /* center the column */
+  display: grid;
+  gap: 16px;             /* spacing between buttons */
+}
+
+/* each button */
+#contact-links .social-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 20px;
+  border-radius: 8px;
+
+  background: var(--gray-400);
+  border: 1px solid transparent;
+
+  text-decoration: none;
+  color: var(--gray-200);
+  font: var(--text-md);
+
+  transition: border-color 200ms ease, transform 200ms ease;
+}
+
+/* left icon */
+#contact-links .social-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* text takes the middle space */
+#contact-links .social-btn span {
+  flex: 1;
+  text-align: left;
+}
+
+/* right arrow */
+#contact-links .social-arrow {
+  width: 12px;
+  height: 12px;
+  display: block;
+  transition: transform 200ms ease;
+}
+
+/* hover like Figma */
+#contact-links .social-btn:hover {
+  border-color: var(--gray-300);
+  transform: translateY(-2px);
+}
+
+#contact-links .social-btn:hover .social-arrow {
+  transform: translateX(4px);
+}

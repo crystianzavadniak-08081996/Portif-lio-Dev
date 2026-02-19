@@ -46,6 +46,14 @@
   padding: 12px;
   display: grid;
   gap: 8px;
+
+  border: 1px solid transparent; /* important */
+  transition: border-color 200ms ease, transform 200ms ease;
+}
+
+#projects #imgs > div:hover {
+  border-color: var(--gray-300);
+  transform: translateY(-4px);
 }
 
 #projects #imgs img {
